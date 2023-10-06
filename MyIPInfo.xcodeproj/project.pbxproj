@@ -11,6 +11,13 @@
 		27CFDBF02ACF33450085B01A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFDBEF2ACF33450085B01A /* ContentView.swift */; };
 		27CFDBF22ACF33470085B01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CFDBF12ACF33470085B01A /* Assets.xcassets */; };
 		27CFDBF52ACF33470085B01A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CFDBF42ACF33470085B01A /* Preview Assets.xcassets */; };
+		27CFDBFE2ACF33830085B01A /* IPInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFDBFD2ACF33830085B01A /* IPInfoModel.swift */; };
+		27CFDC012ACF34AA0085B01A /* MyIPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFDC002ACF34AA0085B01A /* MyIPData.swift */; };
+		27CFDC042ACF350E0085B01A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFDC032ACF350E0085B01A /* NetworkConstants.swift */; };
+		27CFDC232ACFC7370085B01A /* DataLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFDC222ACFC7370085B01A /* DataLoadingView.swift */; };
+		27CFDC252ACFC7A30085B01A /* ErrorLoadingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFDC242ACFC7A30085B01A /* ErrorLoadingDataView.swift */; };
+		27CFDC272ACFC8190085B01A /* DataLoadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFDC262ACFC8190085B01A /* DataLoadedView.swift */; };
+		27CFDC292ACFCDFA0085B01A /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFDC282ACFCDFA0085B01A /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		27CFDBEF2ACF33450085B01A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27CFDBF12ACF33470085B01A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27CFDBF42ACF33470085B01A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27CFDBFD2ACF33830085B01A /* IPInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPInfoModel.swift; sourceTree = "<group>"; };
+		27CFDC002ACF34AA0085B01A /* MyIPData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIPData.swift; sourceTree = "<group>"; };
+		27CFDC032ACF350E0085B01A /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		27CFDC212ACFB73D0085B01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		27CFDC222ACFC7370085B01A /* DataLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingView.swift; sourceTree = "<group>"; };
+		27CFDC242ACFC7A30085B01A /* ErrorLoadingDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLoadingDataView.swift; sourceTree = "<group>"; };
+		27CFDC262ACFC8190085B01A /* DataLoadedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadedView.swift; sourceTree = "<group>"; };
+		27CFDC282ACFCDFA0085B01A /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,11 @@
 		27CFDBEC2ACF33450085B01A /* MyIPInfo */ = {
 			isa = PBXGroup;
 			children = (
+				27CFDC212ACFB73D0085B01A /* Info.plist */,
+				27CFDC022ACF34FC0085B01A /* Constants */,
+				27CFDBFF2ACF347D0085B01A /* Data */,
+				27CFDBFC2ACF336F0085B01A /* Models */,
+				27CFDBFB2ACF33510085B01A /* Views */,
 				27CFDBED2ACF33450085B01A /* MyIPInfoApp.swift */,
 				27CFDBEF2ACF33450085B01A /* ContentView.swift */,
 				27CFDBF12ACF33470085B01A /* Assets.xcassets */,
@@ -65,6 +85,41 @@
 				27CFDBF42ACF33470085B01A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27CFDBFB2ACF33510085B01A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27CFDC222ACFC7370085B01A /* DataLoadingView.swift */,
+				27CFDC242ACFC7A30085B01A /* ErrorLoadingDataView.swift */,
+				27CFDC262ACFC8190085B01A /* DataLoadedView.swift */,
+				27CFDC282ACFCDFA0085B01A /* BackgroundView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27CFDBFC2ACF336F0085B01A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27CFDBFD2ACF33830085B01A /* IPInfoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27CFDBFF2ACF347D0085B01A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				27CFDC002ACF34AA0085B01A /* MyIPData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		27CFDC022ACF34FC0085B01A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				27CFDC032ACF350E0085B01A /* NetworkConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CFDC292ACFCDFA0085B01A /* BackgroundView.swift in Sources */,
 				27CFDBF02ACF33450085B01A /* ContentView.swift in Sources */,
+				27CFDC232ACFC7370085B01A /* DataLoadingView.swift in Sources */,
 				27CFDBEE2ACF33450085B01A /* MyIPInfoApp.swift in Sources */,
+				27CFDC042ACF350E0085B01A /* NetworkConstants.swift in Sources */,
+				27CFDC252ACFC7A30085B01A /* ErrorLoadingDataView.swift in Sources */,
+				27CFDC272ACFC8190085B01A /* DataLoadedView.swift in Sources */,
+				27CFDC012ACF34AA0085B01A /* MyIPData.swift in Sources */,
+				27CFDBFE2ACF33830085B01A /* IPInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +334,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyIPInfo/Preview Content\"";
-				DEVELOPMENT_TEAM = RT32ZWV93X;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyIPInfo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,9 +364,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyIPInfo/Preview Content\"";
-				DEVELOPMENT_TEAM = RT32ZWV93X;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyIPInfo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
